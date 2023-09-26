@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap");
+:root {
+  --background-color: hsl(30, 38%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-button: hsl(158, 36%, 37%);
+  --color-active-button: hsl(212, 21%, 14%);
+  --descrition-color: hsl(228, 12%, 48%);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Montserrat";
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+.container {
+  background-color: var(--color-card);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container picture {
+  width: 300px;
+}
+.container picture img {
+  display: block;
+  width: 100%;
+}
+.container .conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  max-width: 300px;
+  padding: 30px;
+}
+.container .tituloDescritivo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.container .titulo {
+  font-family: "Fraunces";
+  font-weight: 700;
+  line-height: 30px;
+}
+.container .descricao {
+  font-size: 13px;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.container .valorDesconto {
+  font-family: "Fraunces";
+  font-size: 30px;
+  color: var(--color-button);
+}
+.container .valor {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.container .botaoComprar {
+  display: block;
+}
+.container .precos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .botaoComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  color: var(--color-card);
+  background-color: var(--color-button);
+  padding: 14px 0px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.container .botaoComprar:hover {
+  background-color: var(--color-active-button);
+}
+.textColor {
+  color: var(--descrition-color);
+}

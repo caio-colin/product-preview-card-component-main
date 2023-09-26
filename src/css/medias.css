@@ -1,0 +1,11 @@
+@media (max-width: 769px) {
+  .container .conteudo {
+    padding: 20px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .conteudo .titulo {
+    font-size: 25px;
+  }
+}
